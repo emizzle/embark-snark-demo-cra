@@ -1,0 +1,36 @@
+{
+  "contracts": [
+    "contracts/**"
+  ],
+  "buildDir": "public/snarks/",
+  "config": "embarkConfig/",
+  "versions": {
+    "solc": "0.5.0"
+  },
+  "plugins": {
+    "embark-snark": {
+      "buildDir": "public/snarks/",
+      "buildDirUrl": "/snarks/",
+      "contractsBuildDir": "contracts/",
+      "contractsJsonDirUrl": "/snarks/contracts/",
+      "circuits": [
+        "circuits/**"
+      ],
+      "circuitsConfig": {
+        "withdraw": {
+          "protocol": "groth"
+        },
+        "merkleTree": {
+          "exclude": true
+        }
+      }
+    }
+  },
+  "options": {
+    "solc": {
+      "optimize": true,
+      "optimize-runs": 200
+    }
+  },
+  "generationDir": "src/embarkArtifacts"
+}
