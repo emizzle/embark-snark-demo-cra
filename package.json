@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "circomlib": "git+https://github.com/tornadocash/circomlib.git#347822604996bf25f659f96ee0f02810a1f71bb0",
     "embark-snark": "^5.1.1-nightly.2",
+    "embarkjs-snark": "^5.1.1-nightly.2",
     "fs-extra": "8.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
